@@ -13,9 +13,9 @@ import java.util.List;
  *
  * @author rindr
  */
-@Named(value = "bean")
+@Named(value = "bean4")
 @RequestScoped
-public class Bean {
+public class Bean4 {
 
     private int nombre;
 
@@ -26,7 +26,7 @@ public class Bean {
     public void setNombre(int nombre) {
         this.nombre = nombre;
     }
-
+    
     public List<Integer> getNombresSuivants() {
         int nb = 5;
         List<Integer> l = new ArrayList<>(nb);
@@ -36,10 +36,9 @@ public class Bean {
 
         return l;
     }
-    
-    public String afficher(){
-        return "affichage_3?nb="+nombre+"&faces-redirect=true";
-                
+
+    public String afficher() {
+        return "affichage_4?nb=" + nombre + "&faces-redirect=true";
     }
     
 }
